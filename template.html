@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+    <title><$BlogTitle$></title>
+  <meta name="description" content="<$BlogDescription$>" />
+  <!-- Estilos -->
+  <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+   <style type="text/css">
+#navbar-iframe {height:0px;visibility:hidden;display:none} .body{font-family: 'Vollkorn', serif;max-width: 810px;margin: 0 auto 0 auto;font-size: 14px;line-height: 32px;} h1,h2,h3,h4{font-family: 'Special Elite', cursive; text-transform:uppercase; padding: 0; margin: 0; text-align: center; } h3{ font-size: 16px; line-height: 128px; } h4{ font-size: 12px; } a { text-decoration: none; } a:link { color: FireBrick; border-bottom: 1px dotted; } a:visited { color: RosyBrown; border-bottom: 1px dotted; } a:link:hover, a:visited:hover { border-bottom: 1px solid; } .rodape{ clear: both; } .rodape h4{ margin-top: 50px; } .center{ text-align: center; } <MainPage> h1{margin-top: 128px;font-size: 72px;line-height: 128px;} h2{font-size: 48px;line-height: 128px;} ol.sumario{ margin: 1em 10em 10em 10em; padding: 0; } ol.sumario li{ clear: both; width: 100%; margin: 0 0 1em 0; padding: 0; overflow: hidden; border-bottom: dotted 3px; font-family: 'Special Elite', cursive; } .title{ float:left; padding-right:3px; font-size:18px; } .number{ margin:0; float:right; padding-left:3px; font-size:16px; }</MainPage> <ItemPage> h1{margin-top:50px;font-size: 42px;line-height: 50px;} h2{font-size: 18px;line-height: 50px;} .blogger-labels{font-size: 16px;} </ItemPage>
+  </style>
+ </head>
+ <body class="body">
+ <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=302791626446949";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  <MainPage>
+ <h1><$BlogTitle$></h1>
+  <h2>por<br /><$BlogOwnerFirstName$></h2>
+  <h3><$BlogDescription$></h3>
+  <h3>Sumário</h3>
+  <ol class="sumario">
+
+<Blogger>
+<BlogItemTitle>
+ <li><a href="<$BlogItemPermalinkURL$>" title="<$BlogItemTitle$>"> <$BlogItemTitle$> </a></li>
+</BlogItemTitle>
+</Blogger>
+  </ol>
+  <div class="fb-like" data-href="<$BlogURL$>" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="trebuchet ms"></div>
+  </MainPage>
+  
+  <ItemPage>
+  <Blogger>
+   Você está lendo: <$BlogTitle$> > <a href="<$BlogURL$>" title="Sumário">Sumário</a> > <a href="<$BlogItemPermalinkURL$>" title="<$BlogItemTitle$>"><$BlogItemTitle$></a>
+   <h1><$BlogItemTitle$></h1>
+  <h2>por <a href="<$BlogItemAuthorURL$>" title="Exibir Perfil de <$BlogItemAuthor$>" target="_blank"><$BlogItemAuthor$></a></h2>
+  <div class="post"><$BlogItemBody$></div>
+  <div class="fb-like" data-href="<$BlogURL$>" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="trebuchet ms"></div>
+  <div class="fb-comments" data-href="<$BlogItemPermalinkURL$>" data-width="810" data-num-posts="10"></div>
+  </Blogger>
+  </ItemPage>
+  <div class="rodape">
+  <h4>Respeite os direitos Autorais!</h4>
+  <p class="center">Os textos aqui expostos estão protegidos por Lei Federal No. 9610 Lei de Direitos Autorais de 19 de fevereiro de 1998</p>
+<p class="center">
+Template <a href="https://github.com/eduardogoncalves/book4blogger" title="Template Book4Blogger" target="_blank">Book4Blogger</a>
+</p>
+</div> 
+
+ 
+
+  
+ </body>
+ <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+ <script>
+$(function() {
+  $("ol").css("list-style", "none");
+  $("li").each(function(i) {
+    var num = i+1;
+    $(this).wrapInner('<span class="title"></span>').append('<span class="number">'+num+'</span>');
+  });
+});
+</script>
+</html>
