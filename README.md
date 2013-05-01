@@ -7,7 +7,14 @@ The idea to build this template was based on an question from Blogger Help: "[Ho
 
 As I like to write poems, I created this template.
 
-##Examples
+##EXAMPLES
 http://vinhoepoesia.blogspot.com.br/
 
 http://meusversosdeamor.blogspot.com.br/
+
+##USAGE
+1. Copy the HTML code from 'template.html'
+2. Login to your Blogger's account.
+3. Go to Models, Classic Template = www.blogger.com/blogger.g?blogID=YOUR-BLOG-ID#classictemplate
+4. Paste the code on the box "Edit HTML template"
+5. Hit 'Save' button, and that's it!
